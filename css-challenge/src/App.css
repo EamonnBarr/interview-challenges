@@ -24,5 +24,297 @@ body {
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  padding: 40px;
+}
+
+.inner-container-top{
+  align-items: center;
+  background-color: rgb(62, 126, 184);
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  width:100%;
+  padding: 10% 10% 2.5% 10%;
+}
+
+.inner-container-bottom {
+  align-items: center;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  padding: 2.5% 10% 2.5% 10%;
+  width:100%;
+  -moz-border-radius: 0px;
+-webkit-border-radius: 25px 25px 0px 0px;
+border-radius: 25px 25px 0px 0px;
+}
+
+.page-heading{
+  display:block;
+  width:100%;
+}
+
+.top-heading-text{
+  font-size: 3.5vw;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align:left;
+}
+
+.top-subheading-text{
+  font-size: 2.25vw;
+  color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bellicon{
+  background-color: #3F8DC5; /* Green background */
+  border: 1px solid #3F8DC5; /* Green border */
+  border-radius: 25%;
+  color: white; /* White text */
+  padding: 5%; /* Some padding */
+  margin-top: 2.5%; /* Some padding */
+  font-size: 5vw;
+  cursor: pointer; /* Pointer/hand icon */
+  float: right; /* Float the buttons side by side */
+}
+
+.bellicon:hover{
+  background-color: white;
+  color:rgb(62, 126, 184);
+  cursor: pointer; /* Pointer/hand icon */
+}
+
+.searchContainer {
+  display: inline-flex;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  width:100%;
+  padding: 3%;
+  margin: 5% 0% 5% 0%;
+  background: #3F8DC5;
+}
+
+.searchIcon {
+  padding: 0.5rem;
+  font-size: 3vw;
+  color: white;
+}
+
+.searchBox {
+  border: 0px solid;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  flex: 1;
+  background: transparent;
+  font-size: 2vw;
+  color: white;
+}
+
+.searchBox:focus {
+  outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+.Mobilesliderline{
+  border: 5px solid lightgrey;
+  border-radius: 5px;
+  width:7.5%;
+}
+
+.btn-group button {
+  background-color: #3F8DC5; /* Green background */
+  border: 1px solid #3F8DC5; /* Green border */
+  border-radius: 25%;
+  color: white; /* White text */
+  padding: 5%; /* Some padding */
+  margin: 2.5%; /* Some padding */
+  font-size: 5vw;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: white;
+}
+
+.emoji-text {
+  float: left;
+  width: 25%;
+  color: white; /* White text */
+  padding-bottom: 5%; /* Some padding */
+  margin: 0 auto; /* Some padding */
+  font-size: 3vw;
+  text-align: center;
+}
+
+/* Subheadings and Dots */
+.subheadings{
+  width: 100%;
+  float: left;
+  margin: 2.5%;
+
+}
+
+.subheading-text{
+  font-size: 3vw;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dots{
+  margin: 5%;
+  margin-top: min(50px, 5%);
+}
+
+.dots span{
+  height: 1.25vw;
+  width: 1.25vw;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+  margin-right: 2.5%;
+  background-color: lightgrey;
+}
+
+.Exercise-Buttons{
+  background-color: #3F8DC5;
+  padding:15px;
+  border-radius: 15px;
+  width: 100%;
+  height: 30%;
+}
+.Exercise-Buttons:hover{
+  background-color: white;
+  color:rgb(62, 126, 184);
+  cursor: pointer; /* Pointer/hand icon */
+}
+
+/* Cards */
+.card{
+  width: 100%;
+  height:100%;
+  max-height: 300px;
+  background: white;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: left;
+  align-items:center;
+  border-radius: 20px;
+  border: 2px solid rgb(229, 233, 244);
+  margin-top: 5%;
+  transition: background-color .5s, box-shadow .5s, margin-left .5s;
+  position: relative;
+}
+.card:hover{
+  margin-left: 1%;
+  background-color: #ffff;
+  border: transparent;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
+  transition: background-color .5s, box-shadow .5s, margin-left .5s;
+  cursor: pointer; /* Pointer/hand icon */
+}
+.post-image{
+  border-radius: 25%;
+  float: left;
+  text-align: center;
+  padding: 5%;
+  margin: 10%;
+  font-size: 5vw;
+  color: white;
+}
+
+.content-container{
+  width: 75%;
+  float: left;
+  overflow: hidden;
+}
+
+.card-heading{
+  font-size: 3vw;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-subheading{
+  font-size: 2.25vw;
+  color: #768CA4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer{
+  position:relative;
+	bottom:0;
+	left:0;
+	right:0;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  width:100%;
+  padding: 0% 10% 0% 10%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px 0px 25px 25px;
+  border-radius: 0px 0px 25px 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.footer:before {
+  content: "";
+  height: 2px;
+  background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(245,245,245) 50%,rgba(0,0,0,0) 100%);
+  display: block;
+}
+
+.bottom-nav button {
+  border: none;
+  color: rgb(229, 233, 244);
+  background-color: white;
+  padding: 5%;
+  margin:  2.5%;
+  font-size: 5vw;
+  cursor: pointer;
+  float: left;
+}
+
+/* Clear floats */
+.bottom-nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.active, .bottom-nav button:hover {
+  color: #3F8DC5 !important;
 }
